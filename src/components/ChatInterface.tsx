@@ -29,7 +29,7 @@ const ChatInterface = ({ onMessageUpdate }: ChatInterfaceProps) => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   
   // Fixed API key - stored directly in the component
-  const apiKey = "sk-zh_9SNsAGZEbrQuBJ8HAx-iqJcimJXCQoBhqnqF6IUT3BlbkFJ2qqp4zX1M2dzFa4AlUtxWqqOmThpxpGyjFO2g3M3kA";
+  const apiKey = "your_openai_api_key_here";
 
   useEffect(() => {
     scrollToBottom();
