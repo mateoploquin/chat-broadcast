@@ -141,10 +141,17 @@ const MemberSelection = ({ message, file, onSendComplete }: MemberSelectionProps
     }
 
     try {
-      const response = await fetch('http://localhost:5001/api/send-message-to-selected', {
+      const response = await fetch('/api/send-message-to-selected', {
         method: 'POST',
         body: formData
       });
+      
+    // Uncomment the following lines below if you want to test with a local backend:
+    // try {
+    //   const response = await fetch('http://localhost:5001/api/send-message-to-selected', {
+    //     method: 'POST',
+    //     body: formData
+    //   });
 
       const result = await response.json();
 

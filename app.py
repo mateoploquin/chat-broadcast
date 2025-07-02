@@ -57,7 +57,7 @@ def process_message_queue():
                 base_message_body = task['base_message_body']
                 absolute_saved_file_path = task.get('file_path')
 
-                personalized_message = f"Dear {first_text},\\n{base_message_body}"
+                personalized_message = f"Dear {first_text}, {base_message_body}"
                 
                 print(f"Worker: Processing message for {recipient_jid}")
                 print(f"Worker: Message content:\\n{personalized_message}")
